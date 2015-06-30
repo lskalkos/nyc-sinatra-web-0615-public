@@ -1,0 +1,15 @@
+<%= erb :'layouts/_header' %>
+
+<h1>Landmarks</h1>
+
+<table>
+  <% @landmarks.each do |landmark| %>
+  <tr>
+    <td><%= landmark.name %></td>
+    <td><%= landmark.year_completed %></td>
+  </tr>
+  <% end %>
+</table>
+
+
+<%= erb :'layouts/_footer' %>

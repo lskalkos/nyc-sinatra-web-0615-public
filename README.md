@@ -40,7 +40,7 @@ So for example:
 | 3                  | Wall Street Wall       |
 | 4                  | Brooklyn Battery Tunnel|
 
-**Titles**
+**figur**
 
 | **id**             | **name**               |
 |:------------------:|:----------------------:|

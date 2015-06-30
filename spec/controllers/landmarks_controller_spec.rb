@@ -10,7 +10,8 @@ describe LandmarksController do
   end
 
   it "allows you to create a new landmark" do
-    pending "write your own spec!"
+    get '/landmarks/new'
+    expect(last_response.status).to eq(200)
   end
 
   it "allows you to list all landmarks" do
@@ -25,6 +26,11 @@ describe LandmarksController do
   end
 
   it "allows you to edit a single landmark" do
-    pending "write your own spec!"
+    @landmark = Landmark.first.id
+
+    #expect there to be an edit button on the single landmark page
+    get "/landmarks/#{@landmark}/edit"
+
+    expect(last_response.status).to eq(200)
   end
 end
